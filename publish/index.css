@@ -1,0 +1,48 @@
+body {
+  width: 600px;
+  height: 500px;
+}
+
+body > div {
+  width: 100%;
+}
+
+#root {
+  display: none;
+}
+
+#msv {
+  color: darkblue;
+  font-weight: bold;
+}
+
+#dataSection > table {
+  width: 100%;
+}
+
+#dataSection > table,
+th,
+tr {
+  border: 1px solid black;
+  text-align: center;
+  align-items: center;
+}
+
+.removeButton {
+  display: inline-block;
+  height: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+}

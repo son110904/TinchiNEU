@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Tool tự động đăng kí tín chỉ NEU"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="index.css" defer/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body style="font-family: Roboto;">
+    <div id="url-not-valid">
+      <h2 style="color: brown">Đây không phải trang tinchi.neu.edu.vn</h1>
+    </div>
+
+    <div id="root" style="display: none;">
+      <h2 style="text-align: center">TOOL TỰ ĐỘNG ĐĂNG KÝ TÍN NEU</h2>
+      <h2 id="msv">Xin chào 000000</h2>
+
+      <div id="tab-container-main">
+        <div id="selectedClasses">
+          <h2>DANH SÁCH LỚP TÍN CHỈ CẦN ĐĂNG KÝ</h2>
+          <button id="switch-tab" style="margin-bottom: 10px;">Thêm lớp</button>
+          <div id="selectedClassesTable" style="font-size: 10pt">
+          </div>
+        </div>
+        <hr/>
+        <div id="dataSection">
+          <h2>TRẠNG THÁI ĐĂNG KÝ</h2>
+          <button id="startButton">Bắt đầu chạy</button>
+          <button id="stopButton">Dừng lại</button>
+          <br />
+          <br />
+          <table id="dataTable" style="font-size: 10pt">
+            <tr style="font-size: 12pt">
+              <th>Lớp học phần</th>
+              <th>Trạng thái</th>
+            </tr>
+            
+          </table>
+        </div>
+        <hr/>
+        <h2>KẾT QUẢ ĐĂNG KÝ</h2>
+        <div id="registeredSubjects" />
+      </div>
+    </div>
+
+    <div id="tab-container-search" style="display: none;">
+      <div id="searchSection">
+        <button id="switch-tab-back">Quay lại</button>
+        <h2>TRA CỨU LỚP TÍN CHỈ</h2>
+        <p>
+          Tra cứu danh sách lớp sử dụng Tên môn học để thêm vào danh sách đăng
+          ký.
+        </p>
+        <div style="margin-bottom: 10px;">
+          <input id="subjectSearchInput" />
+          <button id="search">Tra cứu</button>
+          <input id="show-full-slot" type="checkbox" value="false">Hiện lớp đã full slot</input>
+        </div>
+        <div id="searchResult"></div>
+      </div>
+    </div>
+  </body>
+</html>
